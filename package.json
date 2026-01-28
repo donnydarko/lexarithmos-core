@@ -1,0 +1,50 @@
+{
+  "name": "lexarithmos-core",
+  "version": "1.0.0",
+  "description": "Core lexarithmic calculation library for Greek isopsephy (gematria)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./properties": {
+      "import": "./dist/properties/index.js",
+      "types": "./dist/properties/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "greek",
+    "isopsephy",
+    "gematria",
+    "lexarithmos",
+    "numerology",
+    "calculation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/lexarithmos-core"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
